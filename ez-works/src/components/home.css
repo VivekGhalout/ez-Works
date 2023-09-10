@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@100;300&display=swap");
+
+section {
+  padding: 150px 40px 150px 40px;
+}
+
+.main-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo-div {
+  width: 42%;
+}
+
+.logo-div > img {
+  width: 70%;
+}
+
+.logo-div h3 {
+  font-size: 38px;
+  color: #112949;
+  font-family: "Exo 2";
+  letter-spacing: 0px;
+  line-height: 58px;
+  margin-top: 10px;
+}
+
+.logo-div > p {
+  font-size: 25.6px;
+  color: #112949;
+  font-family: "Exo 2";
+  letter-spacing: 0px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+.small-screen-form {
+  display: none;
+}
+
+.res-message-sm {
+  display: none;
+}
+
+.input-div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.input-div input {
+  width: 60%;
+  border: 1px solid #ababab;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #ababab;
+  font-family: "Exo 2";
+}
+
+.input-div button {
+  width: 30%;
+  border: 1px solid #ea7b2c;
+  background: #ea7b2c;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 18px 10px;
+  border-radius: 10px;
+}
+
+.cards-div {
+  width: 58%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: right;
+  align-content: center;
+  row-gap: 40px;
+  column-gap: 10px;
+}
+
+.card {
+  width: 80%;
+  padding: 20px;
+  background: #112949;
+  border-radius: 10px;
+}
+
+.card > div {
+  display: flex;
+  gap: 20px;
+}
+
+.card > div > div {
+  color: #3cc3f2;
+  font-size: 20px;
+  font-family: "Exo 2";
+}
+
+.card > div:nth-child(2) {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: "Exo 2";
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .logo-div {
+    width: 45%;
+  }
+
+  .logo-div > img {
+    width: 60%;
+  }
+
+  .cards-div {
+    width: 55%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .card {
+    width: 75%;
+  }
+
+  .logo-div h3 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .logo-div > p {
+    font-size: 24px;
+  }
+
+  .input-div input {
+    font-size: 18px;
+  }
+
+  .input-div button {
+    font-size: 18px;
+    padding: 15px 5px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  section {
+    padding: 100px 20px 100px 20px;
+  }
+
+  .logo-div h3 {
+    font-size: 28px;
+  }
+
+  .logo-div > p {
+    font-size: 20px;
+  }
+
+  .input-div button {
+    font-size: 18px;
+  }
+
+  .input-div input {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .card {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .card > div > div {
+    font-size: 18px;
+  }
+
+  .card > div:nth-child(2) {
+    font-size: 18px;
+  }
+
+  .cards-div {
+    column-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .logo-div h3 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  .logo-div > p {
+    font-size: 18px;
+  }
+
+  .input-div button {
+    font-size: 14px;
+  }
+
+  .input-div input {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .card {
+    width: 85%;
+    padding: 10px;
+  }
+
+  .card > div > div {
+    font-size: 16px;
+  }
+
+  .card > div:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .cards-div {
+    column-gap: 5px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  section {
+    padding: 50px 40px 50px 40px;
+  }
+
+  .main-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-div {
+    width: 100%;
+  }
+
+  .cards-div {
+    width: 100%;
+    row-gap: 40px;
+    column-gap: 10px;
+    margin-top: 40px;
+  }
+
+  .card {
+    width: 75%;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .big-screen-form {
+    display: none;
+  }
+
+  .res-message-lg {
+    display: none;
+  }
+
+  .small-screen-form {
+    display: block;
+    width: 100%;
+  }
+
+  .res-message-sm {
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    width: 80%;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  section {
+    padding: 40px 40px 40px 40px;
+  }
+
+  .logo-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-div h3 {
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 20px;
+    padding: 0px 10px;
+  }
+
+  .logo-div > p {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0px 40px;
+    margin-top: 20px;
+  }
+
+  .cards-div {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items:center;
+    align-content: center;
+    margin-top: 40px;
+    row-gap: 20px;
+    column-gap: 0px;
+  }
+
+  .card {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+  }
+
+  .card > div {
+    gap: 0px;
+  }
+
+  .card > div > div {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0px 20px;
+  }
+
+  .card > div:nth-child(2) {
+    font-size: 24px;
+    line-height: 29px;
+    padding-top: 20px;
+  }
+
+  .big-screen-form {
+    display: none;
+  }
+
+  .res-message-lg {
+    display: none;
+  }
+
+  .small-screen-form {
+    display: block;
+    width: 100%;
+  }
+
+  .res-message-sm {
+    font-size: 22px;
+    font-weight: 600;
+    display: block;
+  }
+
+  .small-screen-form > .input-div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .small-screen-form > .input-div > input {
+    width: 100%;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .small-screen-form > .input-div > button {
+    width: 60%;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
